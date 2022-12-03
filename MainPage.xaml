@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <Grid
+        ColumnDefinitions="*, *, *"
+        RowDefinitions="2.5*, *, *, *, *"
+        >
+        <Button Grid.Column="0" Grid.Row="1" Text="1" FontSize ="20" Clicked="DigitClicked"/>
+        <Button Grid.Column="0" Grid.Row="2" Text="4" FontSize ="20" Clicked="DigitClicked"/>
+        <Button Grid.Column="0" Grid.Row="3" Text="7" FontSize ="20" Clicked="DigitClicked"/>
+        <Button Grid.Column="0" Grid.Row="4" FontSize ="20" BorderWidth="5" Text="❌" Clicked ="ClearClicked"/>
+
+        <Button Grid.Column="1" Grid.Row="1" Text="2" FontSize ="20" Clicked="DigitClicked"/>
+        <Button Grid.Column="1" Grid.Row="2" Text="5" FontSize ="20" Clicked="DigitClicked"/>
+        <Button Grid.Column="1" Grid.Row="3" Text="8" FontSize ="20" Clicked="DigitClicked"/>
+        <Button Grid.Column="1" Grid.Row="4" Text="0" FontSize ="20" Clicked="DigitClicked"/>
+
+        <Button Grid.Column="2" Grid.Row="1" Text="3" FontSize ="20" Clicked="DigitClicked"/>
+        <Button Grid.Column="2" Grid.Row="2" Text="6" FontSize ="20" Clicked="DigitClicked"/>
+        <Button Grid.Column="2" Grid.Row="3" Text="9" FontSize ="20" Clicked="DigitClicked"/>
+        <Button Grid.Column="2" Grid.Row="4" BorderWidth="3" Text="✅" FontSize ="20" Clicked="EqualsClicked"/>
+
+        <Label x:Name="DisplayLabel" Grid.ColumnSpan="4" FontSize="30" HorizontalTextAlignment="End" VerticalTextAlignment="End" Margin="0, 0, 20, 20"/>
+    </Grid>
+
+</ContentPage>
